@@ -29,18 +29,22 @@ Pull a single file:
 curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base16.yaml
 ```
 
-Reference it directly from a Nix flake — see [`examples/`](./examples) below.
-
 ---
 
-## Demos
+## In the wild
+
+The palette running on hp250 (NixOS + Sway + Stylix + Waybar) — Firefox,
+KeePassXC and two `foot` terminals tiled side-by-side, top bar showing
+workspaces · audio · WiFi · battery · clock:
+
+![Desktop](./examples/desktop.png)
 
 ### Surfaces — dark, deep, OLED-friendly
 
 ![Surfaces band](./examples/surfaces-band.png)
 
 `crust → mantle → base → surface0 → surface1 → surface2` — six steps from
-true black up to a slate that still reads as "dark" on a sunny window.
+true black up to a slate that still reads as "dark" in daylight.
 
 ### Accents — pastel, low-contrast, easy on the eyes
 
@@ -49,28 +53,12 @@ true black up to a slate that still reads as "dark" on a sunny window.
 All 14 accents share the same lightness, so syntax highlighting never has
 one color "shouting" louder than the rest.
 
-### Wallpapers — generated from the palette
-
-| ![Deep](./examples/wallpaper-deep.png) | ![Radial](./examples/wallpaper-radial.png) |
-|---|---|
-| `base → mantle` linear gradient | radial glow from `surface1` |
-| ![Pastel](./examples/wallpaper-pastel.png) | ![Plasma](./examples/wallpaper-plasma.png) |
-| `mauve / lavender / teal / blue` split | plasma multiplied over `base` |
-
-### Code sample — syntax highlighting in the palette
+### Code — base16 mapping in action
 
 ![Code](./examples/code-sample.png)
 
-Mapped via the base16 scheme: keywords → `mauve`, functions → `lavender`,
-strings → `green`, comments → `overlay0`, errors → `red`, types → `yellow`.
-
-### Desktop mockup — bar + tiled windows
-
-![Desktop](./examples/desktop-mockup.png)
-
-Top bar uses `base` background + `lavender` for active workspace; tiled
-windows show `lavender` border (focused) vs `surface1` (unfocused). Same
-look I run on the actual hp250 NixOS box with Sway + Stylix.
+Keywords → `mauve`, functions → `lavender`, strings → `green`,
+comments → `overlay0`, errors → `red`, types → `yellow`.
 
 ---
 
@@ -78,10 +66,10 @@ look I run on the actual hp250 NixOS box with Sway + Stylix.
 
 ### Core
 
-| Token | Hex | Sample |
-|---|---|---|
-| base | `#2A3042` | ![](https://placehold.co/40x20/2A3042/2A3042.png) |
-| primary | `#B9C5EE` | ![](https://placehold.co/40x20/B9C5EE/B9C5EE.png) |
+| Token | Hex |
+|---|---|
+| base | `#2A3042` |
+| primary | `#B9C5EE` |
 
 ### Surfaces
 
@@ -144,7 +132,7 @@ look I run on the actual hp250 NixOS box with Sway + Stylix.
 ## Used by
 
 - [`sturq/nix-config`](https://github.com/sturq/nix-config) — NixOS via Stylix
-- [`sturq/win-glazewm`](https://github.com/sturq/win-glazewm) — Windows via Zebar CSS variables
+- [`sturq/win-glazewm`](https://github.com/sturq/win-glazewm) — Windows via Zebar CSS variables + Windows accent color
 
 ---
 
