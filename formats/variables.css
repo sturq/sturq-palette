@@ -1,0 +1,37 @@
+/* Sturq OLED palette — CSS custom properties */
+:root {
+  /* Core */
+  --sturq-base:    #2A3042;
+  --sturq-primary: #B9C5EE;
+
+  /* Surfaces */
+  --sturq-crust:    #000000;
+  --sturq-mantle:   #060709;
+  --sturq-surface0: #384058;
+  --sturq-surface1: #46506E;
+  --sturq-surface2: #586384;
+
+  /* Text & overlays */
+  --sturq-text:     #FFFFFF;
+  --sturq-subtext1: #D8DCE9;
+  --sturq-subtext0: #C2CAE5;
+  --sturq-overlay2: #9CA7CE;
+  --sturq-overlay1: #808CB7;
+  --sturq-overlay0: #67739D;
+
+  /* Accents (pastel) */
+  --sturq-rosewater: #EECBB9;
+  --sturq-flamingo:  #EEC2B9;
+  --sturq-pink:      #EEB9D3;
+  --sturq-mauve:     #DCB9EE;
+  --sturq-red:       #EEB9BD;
+  --sturq-maroon:    #EEC0B9;
+  --sturq-peach:     #EECFB9;
+  --sturq-yellow:    #EEE5B9;
+  --sturq-green:     #B9EEB9;
+  --sturq-teal:      #B9EEE5;
+  --sturq-sky:       #B9E1EE;
+  --sturq-sapphire:  #B9D3EE;
+  --sturq-blue:      #B9CBEE;
+  --sturq-lavender:  #B9C5EE;
+}

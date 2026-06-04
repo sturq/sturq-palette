@@ -1,0 +1,40 @@
+name = "Sturq OLED"
+author = "sturq"
+slug = "sturq-oled"
+variant = "dark"
+
+[core]
+base    = "#2A3042"
+primary = "#B9C5EE"
+
+[surfaces]
+crust    = "#000000"
+mantle   = "#060709"
+base     = "#2A3042"
+surface0 = "#384058"
+surface1 = "#46506E"
+surface2 = "#586384"
+
+[text]
+text     = "#FFFFFF"
+subtext1 = "#D8DCE9"
+subtext0 = "#C2CAE5"
+overlay2 = "#9CA7CE"
+overlay1 = "#808CB7"
+overlay0 = "#67739D"
+
+[accents]
+rosewater = "#EECBB9"
+flamingo  = "#EEC2B9"
+pink      = "#EEB9D3"
+mauve     = "#DCB9EE"
+red       = "#EEB9BD"
+maroon    = "#EEC0B9"
+peach     = "#EECFB9"
+yellow    = "#EEE5B9"
+green     = "#B9EEB9"
+teal      = "#B9EEE5"
+sky       = "#B9E1EE"
+sapphire  = "#B9D3EE"
+blue      = "#B9CBEE"
+lavender  = "#B9C5EE"

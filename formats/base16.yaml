@@ -1,0 +1,22 @@
+system: "base16"
+name: "Sturq OLED"
+author: "sturq"
+slug: "sturq-oled"
+variant: "dark"
+palette:
+  base00: "060709"  # mantle    — default bg (near-black, OLED-friendly)
+  base01: "2A3042"  # base      — lighter bg / status line
+  base02: "384058"  # surface0  — selection
+  base03: "46506E"  # surface1  — comments, line numbers
+  base04: "9CA7CE"  # overlay2  — dim foreground
+  base05: "FFFFFF"  # text      — default foreground
+  base06: "D8DCE9"  # subtext1  — light foreground
+  base07: "C2CAE5"  # subtext0  — lighter foreground
+  base08: "EEB9BD"  # red       — variables, errors
+  base09: "EECFB9"  # peach     — integers, constants
+  base0A: "EEE5B9"  # yellow    — classes, warnings
+  base0B: "B9EEB9"  # green     — strings, success
+  base0C: "B9EEE5"  # teal      — support, regex
+  base0D: "B9C5EE"  # lavender  — functions, info (primary accent)
+  base0E: "DCB9EE"  # mauve     — keywords
+  base0F: "EEC0B9"  # maroon    — deprecated, embedded
