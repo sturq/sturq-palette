@@ -2,9 +2,10 @@
 
 # sturq-palette
 
-OLED-optimized dark color palette. Near-black surfaces, pastel accents,
-designed to look correct on both an AMOLED phone screen and a desktop
-monitor without changing tone.
+Dark color palette with **Termux-default ANSI accents**. Pure black
+surfaces, bright primary colours, designed so a terminal session and the
+UI around it use the same exact hexes — Linux console, xterm, Termux,
+they all start from `#cd0000` for red, `#0000ee` for blue, etc.
 
 ![Palette overview](./palette.png)
 
@@ -31,37 +32,6 @@ curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base1
 
 ---
 
-## In the wild
-
-The palette running on hp250 (NixOS + Sway + Stylix + Waybar) — Firefox,
-KeePassXC and two `foot` terminals tiled side-by-side, top bar showing
-workspaces · audio · WiFi · battery · clock:
-
-![Desktop](./examples/desktop.png)
-
-### Surfaces — dark, deep, OLED-friendly
-
-![Surfaces band](./examples/surfaces-band.png)
-
-`crust → mantle → base → surface0 → surface1 → surface2` — six steps from
-true black up to a slate that still reads as "dark" in daylight.
-
-### Accents — pastel, low-contrast, easy on the eyes
-
-![Accents](./examples/accents-rainbow.png)
-
-All 14 accents share the same lightness, so syntax highlighting never has
-one color "shouting" louder than the rest.
-
-### Code — base16 mapping in action
-
-![Code](./examples/code-sample.png)
-
-Keywords → `mauve`, functions → `lavender`, strings → `green`,
-comments → `overlay0`, errors → `red`, types → `yellow`.
-
----
-
 ## Hex reference
 
 ### Core
@@ -69,63 +39,63 @@ comments → `overlay0`, errors → `red`, types → `yellow`.
 | Token | Hex |
 |---|---|
 | base | `#2A3042` |
-| primary | `#B9C5EE` |
+| primary | `#0000EE` |
 
 ### Surfaces
 
 | Token | Hex |
 |---|---|
 | crust | `#000000` |
-| mantle | `#060709` |
-| base | `#2A3042` |
-| surface0 | `#384058` |
-| surface1 | `#46506E` |
+| mantle | `#000000` |
+| base | `#1C1C1C` |
+| surface0 | `#2A3042` |
+| surface1 | `#3A3A3A` |
 | surface2 | `#586384` |
 
 ### Text & overlays
 
 | Token | Hex |
 |---|---|
-| text | `#FFFFFF` |
-| subtext1 | `#D8DCE9` |
-| subtext0 | `#C2CAE5` |
-| overlay2 | `#9CA7CE` |
-| overlay1 | `#808CB7` |
-| overlay0 | `#67739D` |
+| text | `#E5E5E5` |
+| subtext1 | `#F5F5F5` |
+| subtext0 | `#FFFFFF` |
+| overlay2 | `#B2B2B2` |
+| overlay1 | `#9CA7CE` |
+| overlay0 | `#7F7F7F` |
 
-### Accents
+### Accents — Termux default ANSI
 
-| Token | Hex | Token | Hex |
+| Token | Hex | Bright variant | Hex |
 |---|---|---|---|
-| rosewater | `#EECBB9` | peach | `#EECFB9` |
-| flamingo | `#EEC2B9` | yellow | `#EEE5B9` |
-| pink | `#EEB9D3` | green | `#B9EEB9` |
-| mauve | `#DCB9EE` | teal | `#B9EEE5` |
-| red | `#EEB9BD` | sky | `#B9E1EE` |
-| maroon | `#EEC0B9` | sapphire | `#B9D3EE` |
-| | | blue | `#B9CBEE` |
-| | | lavender | `#B9C5EE` |
+| red | `#CD0000` | bright_red | `#FF0000` |
+| orange | `#CD5C00` | — | — |
+| yellow | `#CDCD00` | bright_yellow | `#FFFF00` |
+| green | `#00CD00` | bright_green | `#00FF00` |
+| cyan | `#00CDCD` | bright_cyan | `#00FFFF` |
+| blue | `#0000EE` | bright_blue | `#5C5CFF` |
+| magenta | `#CD00CD` | bright_magenta | `#FF00FF` |
+| maroon | `#800000` | — | — |
 
 ### Base16 mapping
 
 | Slot | Token | Hex |
 |---|---|---|
-| base00 | mantle | `#060709` |
-| base01 | base | `#2A3042` |
-| base02 | surface0 | `#384058` |
-| base03 | surface1 | `#46506E` |
-| base04 | overlay2 | `#9CA7CE` |
-| base05 | text | `#FFFFFF` |
-| base06 | subtext1 | `#D8DCE9` |
-| base07 | subtext0 | `#C2CAE5` |
-| base08 | red | `#EEB9BD` |
-| base09 | peach | `#EECFB9` |
-| base0A | yellow | `#EEE5B9` |
-| base0B | green | `#B9EEB9` |
-| base0C | teal | `#B9EEE5` |
-| base0D | lavender | `#B9C5EE` |
-| base0E | mauve | `#DCB9EE` |
-| base0F | maroon | `#EEC0B9` |
+| base00 | mantle | `#000000` |
+| base01 | base | `#1C1C1C` |
+| base02 | surface0 | `#2A3042` |
+| base03 | surface1 | `#7F7F7F` |
+| base04 | overlay2 | `#B2B2B2` |
+| base05 | text | `#E5E5E5` |
+| base06 | subtext1 | `#F5F5F5` |
+| base07 | subtext0 | `#FFFFFF` |
+| base08 | red | `#CD0000` |
+| base09 | orange | `#CD5C00` |
+| base0A | yellow | `#CDCD00` |
+| base0B | green | `#00CD00` |
+| base0C | cyan | `#00CDCD` |
+| base0D | blue | `#0000EE` |
+| base0E | magenta | `#CD00CD` |
+| base0F | maroon | `#800000` |
 
 ---
 

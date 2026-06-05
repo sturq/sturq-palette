@@ -5,38 +5,38 @@
   "variant": "dark",
   "core": {
     "base":    "#2A3042",
-    "primary": "#B9C5EE"
+    "primary": "#0000EE"
   },
   "surfaces": {
     "crust":    "#000000",
-    "mantle":   "#060709",
-    "base":     "#2A3042",
-    "surface0": "#384058",
-    "surface1": "#46506E",
+    "mantle":   "#000000",
+    "base":     "#1C1C1C",
+    "surface0": "#2A3042",
+    "surface1": "#3A3A3A",
     "surface2": "#586384"
   },
   "text": {
-    "text":     "#FFFFFF",
-    "subtext1": "#D8DCE9",
-    "subtext0": "#C2CAE5",
-    "overlay2": "#9CA7CE",
-    "overlay1": "#808CB7",
-    "overlay0": "#67739D"
+    "text":     "#E5E5E5",
+    "subtext1": "#F5F5F5",
+    "subtext0": "#FFFFFF",
+    "overlay2": "#B2B2B2",
+    "overlay1": "#9CA7CE",
+    "overlay0": "#7F7F7F"
   },
   "accents": {
-    "rosewater": "#EECBB9",
-    "flamingo":  "#EEC2B9",
-    "pink":      "#EEB9D3",
-    "mauve":     "#DCB9EE",
-    "red":       "#EEB9BD",
-    "maroon":    "#EEC0B9",
-    "peach":     "#EECFB9",
-    "yellow":    "#EEE5B9",
-    "green":     "#B9EEB9",
-    "teal":      "#B9EEE5",
-    "sky":       "#B9E1EE",
-    "sapphire":  "#B9D3EE",
-    "blue":      "#B9CBEE",
-    "lavender":  "#B9C5EE"
+    "red":       "#CD0000",
+    "orange":    "#CD5C00",
+    "yellow":    "#CDCD00",
+    "green":     "#00CD00",
+    "cyan":      "#00CDCD",
+    "blue":      "#0000EE",
+    "magenta":   "#CD00CD",
+    "maroon":    "#800000",
+    "bright_red":     "#FF0000",
+    "bright_green":   "#00FF00",
+    "bright_yellow":  "#FFFF00",
+    "bright_blue":    "#5C5CFF",
+    "bright_magenta": "#FF00FF",
+    "bright_cyan":    "#00FFFF"
   }
 }
