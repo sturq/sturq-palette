@@ -10,7 +10,7 @@ primary = "#B9C5EE"
 [surfaces]
 crust = "#000000"
 mantle = "#000000"
-base = "#1C1C1C"
+dim = "#1C1C1C"
 surface0 = "#2A3042"
 surface1 = "#3A3A3A"
 surface2 = "#586384"

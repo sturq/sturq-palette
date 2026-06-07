@@ -15,47 +15,24 @@ they all start from `#cd0000` for red, `#0000ee` for blue, etc.
 
 ## Use it
 
-The same palette in every format you'll realistically need:
+The palette ships in every format that matters:
 
-| File | Format | Use case |
+| File | Format | Typical use |
 |---|---|---|
-| [`formats/base16.yaml`](./formats/base16.yaml) | Base16 | tinted-theming, base16 generators |
-| [`formats/palette.json`](./formats/palette.json) | JSON | Web apps, JS bundlers, anything generic |
-| [`formats/palette.toml`](./formats/palette.toml) | TOML | Rust / config files / generic |
-| [`formats/variables.css`](./formats/variables.css) | CSS vars | Web UI, Zebar bars, any HTML target |
+| [`formats/palette.json`](./formats/palette.json) | JSON | source of truth — parse from anywhere |
+| [`formats/palette.toml`](./formats/palette.toml) | TOML | config files, Rust projects |
+| [`formats/variables.css`](./formats/variables.css) | CSS vars | web UI, HTML status bars |
+| [`formats/base16.yaml`](./formats/base16.yaml) | Base16 | tinted-theming generators |
 
-Pull a single file:
+Grab one file directly:
 
 ```sh
-curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base16.yaml
+curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/palette.json
 ```
 
-### Consume from Nix
-
-This repo is pure data — no flake, no language lock-in. Add it as a
-`flake = false` input and parse the JSON yourself:
-
-```nix
-{
-  inputs.sturq-palette = {
-    url = "github:sturq/sturq-palette";
-    flake = false;
-  };
-
-  outputs = { nixpkgs, sturq-palette, ... }: let
-    palette = builtins.fromJSON (builtins.readFile "${sturq-palette}/formats/palette.json");
-  in {
-    # palette.core.primary   => "#B9C5EE"
-    # palette.accents.blue   => "#0000EE"
-  };
-}
-```
-
-### Consume from JS / Rust / anything
-
-Same idea — fetch `formats/palette.json` and parse with your stdlib.
-The JSON is stable: `core`, `surfaces`, `text`, `accents` (with a
-nested `bright` group under accents).
+The JSON tree is stable: `core`, `surfaces`, `text`, `accents` — with a
+nested `bright` group under accents. Every other format is generated
+from it, so they can never drift.
 
 ---
 
@@ -74,7 +51,7 @@ nested `bright` group under accents).
 |---|---|---|
 | ![](./assets/swatches/000000.png) | crust | `#000000` |
 | ![](./assets/swatches/000000.png) | mantle | `#000000` |
-| ![](./assets/swatches/1C1C1C.png) | base | `#1C1C1C` |
+| ![](./assets/swatches/1C1C1C.png) | dim | `#1C1C1C` |
 | ![](./assets/swatches/2A3042.png) | surface0 | `#2A3042` |
 | ![](./assets/swatches/3A3A3A.png) | surface1 | `#3A3A3A` |
 | ![](./assets/swatches/586384.png) | surface2 | `#586384` |
@@ -108,7 +85,7 @@ nested `bright` group under accents).
 |  | Slot | Token | Hex |
 |---|---|---|---|
 | ![](./assets/swatches/000000.png) | base00 | mantle | `#000000` |
-| ![](./assets/swatches/1C1C1C.png) | base01 | base | `#1C1C1C` |
+| ![](./assets/swatches/1C1C1C.png) | base01 | dim | `#1C1C1C` |
 | ![](./assets/swatches/2A3042.png) | base02 | surface0 | `#2A3042` |
 | ![](./assets/swatches/7F7F7F.png) | base03 | surface1 | `#7F7F7F` |
 | ![](./assets/swatches/B2B2B2.png) | base04 | overlay2 | `#B2B2B2` |
