@@ -19,7 +19,8 @@ The same palette in every format you'll realistically need:
 
 | File | Format | Use case |
 |---|---|---|
-| [`formats/base16.yaml`](./formats/base16.yaml) | Base16 | Stylix, tinted-theming, base16 generators |
+| [`flake.nix`](./flake.nix) | Nix flake | NixOS / home-manager / Stylix |
+| [`formats/base16.yaml`](./formats/base16.yaml) | Base16 | tinted-theming, base16 generators |
 | [`formats/palette.json`](./formats/palette.json) | JSON | Web apps, JS bundlers, anything generic |
 | [`formats/palette.toml`](./formats/palette.toml) | TOML | Rust / config files / generic |
 | [`formats/variables.css`](./formats/variables.css) | CSS vars | Web UI, Zebar bars, any HTML target |
@@ -29,6 +30,36 @@ Pull a single file:
 ```sh
 curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base16.yaml
 ```
+
+### From Nix
+
+The repo is a flake. Add it as an input and read colours from it directly
+— no copy-paste, no drift between this repo and your config:
+
+```nix
+{
+  inputs.sturq-palette.url = "github:sturq/sturq-palette";
+
+  outputs = { self, nixpkgs, sturq-palette, ... }: {
+    nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
+      modules = [{
+        stylix.base16Scheme = sturq-palette.base16Scheme;
+        # raw tokens if you need them:
+        # sturq-palette.palette.accents.blue   => "#0000EE"
+        # sturq-palette.palette.core.primary   => "#B9C5EE"
+      }];
+    };
+  };
+}
+```
+
+Outputs:
+
+| Attr | Type |
+|---|---|
+| `palette` | full token tree: `core`, `surfaces`, `text`, `accents` |
+| `base16Scheme` | Stylix-ready base16 attrs (bare hex, no `#`) |
+| `lib.stripHash` | drop leading `#` from a hex string |
 
 ---
 
