@@ -55,7 +55,7 @@ mkrow() {
 
 mkrow "Core" core.png \
   "#2A3042" "base" \
-  "#0000EE" "primary"
+  "#B9C5EE" "primary"
 
 mkrow "Surfaces" surfaces.png \
   "#000000" "crust" \

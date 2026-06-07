@@ -39,7 +39,7 @@ curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base1
 | Token | Hex |
 |---|---|
 | base | `#2A3042` |
-| primary | `#0000EE` |
+| primary | `#B9C5EE` |
 
 ### Surfaces
 

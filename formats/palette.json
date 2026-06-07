@@ -5,7 +5,7 @@
   "variant": "dark",
   "core": {
     "base":    "#2A3042",
-    "primary": "#0000EE"
+    "primary": "#B9C5EE"
   },
   "surfaces": {
     "crust":    "#000000",
