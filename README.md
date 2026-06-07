@@ -7,7 +7,7 @@ surfaces, bright primary colours, designed so a terminal session and the
 UI around it use the same exact hexes — Linux console, xterm, Termux,
 they all start from `#cd0000` for red, `#0000ee` for blue, etc.
 
-![Palette overview](./palette.png)
+![Palette overview](./assets/preview.png)
 
 </div>
 
@@ -63,68 +63,90 @@ nested `bright` group under accents).
 
 ### Core
 
-| Token | Hex |
-|---|---|
-| base | `#2A3042` |
-| primary | `#B9C5EE` |
+|  | Token | Hex |
+|---|---|---|
+| ![](./assets/swatches/2A3042.png) | base | `#2A3042` |
+| ![](./assets/swatches/B9C5EE.png) | primary | `#B9C5EE` |
 
 ### Surfaces
 
-| Token | Hex |
-|---|---|
-| crust | `#000000` |
-| mantle | `#000000` |
-| base | `#1C1C1C` |
-| surface0 | `#2A3042` |
-| surface1 | `#3A3A3A` |
-| surface2 | `#586384` |
+|  | Token | Hex |
+|---|---|---|
+| ![](./assets/swatches/000000.png) | crust | `#000000` |
+| ![](./assets/swatches/000000.png) | mantle | `#000000` |
+| ![](./assets/swatches/1C1C1C.png) | base | `#1C1C1C` |
+| ![](./assets/swatches/2A3042.png) | surface0 | `#2A3042` |
+| ![](./assets/swatches/3A3A3A.png) | surface1 | `#3A3A3A` |
+| ![](./assets/swatches/586384.png) | surface2 | `#586384` |
 
 ### Text & overlays
 
-| Token | Hex |
-|---|---|
-| text | `#E5E5E5` |
-| subtext1 | `#F5F5F5` |
-| subtext0 | `#FFFFFF` |
-| overlay2 | `#B2B2B2` |
-| overlay1 | `#9CA7CE` |
-| overlay0 | `#7F7F7F` |
+|  | Token | Hex |
+|---|---|---|
+| ![](./assets/swatches/E5E5E5.png) | text | `#E5E5E5` |
+| ![](./assets/swatches/F5F5F5.png) | subtext1 | `#F5F5F5` |
+| ![](./assets/swatches/FFFFFF.png) | subtext0 | `#FFFFFF` |
+| ![](./assets/swatches/B2B2B2.png) | overlay2 | `#B2B2B2` |
+| ![](./assets/swatches/9CA7CE.png) | overlay1 | `#9CA7CE` |
+| ![](./assets/swatches/7F7F7F.png) | overlay0 | `#7F7F7F` |
 
 ### Accents — Termux default ANSI
 
-| Token | Hex | Bright variant | Hex |
-|---|---|---|---|
-| red | `#CD0000` | bright_red | `#FF0000` |
-| orange | `#CD5C00` | — | — |
-| yellow | `#CDCD00` | bright_yellow | `#FFFF00` |
-| green | `#00CD00` | bright_green | `#00FF00` |
-| cyan | `#00CDCD` | bright_cyan | `#00FFFF` |
-| blue | `#0000EE` | bright_blue | `#5C5CFF` |
-| magenta | `#CD00CD` | bright_magenta | `#FF00FF` |
-| maroon | `#800000` | — | — |
+|  | Token | Hex |  | Bright variant | Hex |
+|---|---|---|---|---|---|
+| ![](./assets/swatches/CD0000.png) | red | `#CD0000` | ![](./assets/swatches/FF0000.png) | bright_red | `#FF0000` |
+| ![](./assets/swatches/CD5C00.png) | orange | `#CD5C00` |  | — | — |
+| ![](./assets/swatches/CDCD00.png) | yellow | `#CDCD00` | ![](./assets/swatches/FFFF00.png) | bright_yellow | `#FFFF00` |
+| ![](./assets/swatches/00CD00.png) | green | `#00CD00` | ![](./assets/swatches/00FF00.png) | bright_green | `#00FF00` |
+| ![](./assets/swatches/00CDCD.png) | cyan | `#00CDCD` | ![](./assets/swatches/00FFFF.png) | bright_cyan | `#00FFFF` |
+| ![](./assets/swatches/0000EE.png) | blue | `#0000EE` | ![](./assets/swatches/5C5CFF.png) | bright_blue | `#5C5CFF` |
+| ![](./assets/swatches/CD00CD.png) | magenta | `#CD00CD` | ![](./assets/swatches/FF00FF.png) | bright_magenta | `#FF00FF` |
+| ![](./assets/swatches/800000.png) | maroon | `#800000` |  | — | — |
 
 ### Base16 mapping
 
-| Slot | Token | Hex |
-|---|---|---|
-| base00 | mantle | `#000000` |
-| base01 | base | `#1C1C1C` |
-| base02 | surface0 | `#2A3042` |
-| base03 | surface1 | `#7F7F7F` |
-| base04 | overlay2 | `#B2B2B2` |
-| base05 | text | `#E5E5E5` |
-| base06 | subtext1 | `#F5F5F5` |
-| base07 | subtext0 | `#FFFFFF` |
-| base08 | red | `#CD0000` |
-| base09 | orange | `#CD5C00` |
-| base0A | yellow | `#CDCD00` |
-| base0B | green | `#00CD00` |
-| base0C | cyan | `#00CDCD` |
-| base0D | blue | `#0000EE` |
-| base0E | magenta | `#CD00CD` |
-| base0F | maroon | `#800000` |
+|  | Slot | Token | Hex |
+|---|---|---|---|
+| ![](./assets/swatches/000000.png) | base00 | mantle | `#000000` |
+| ![](./assets/swatches/1C1C1C.png) | base01 | base | `#1C1C1C` |
+| ![](./assets/swatches/2A3042.png) | base02 | surface0 | `#2A3042` |
+| ![](./assets/swatches/7F7F7F.png) | base03 | surface1 | `#7F7F7F` |
+| ![](./assets/swatches/B2B2B2.png) | base04 | overlay2 | `#B2B2B2` |
+| ![](./assets/swatches/E5E5E5.png) | base05 | text | `#E5E5E5` |
+| ![](./assets/swatches/F5F5F5.png) | base06 | subtext1 | `#F5F5F5` |
+| ![](./assets/swatches/FFFFFF.png) | base07 | subtext0 | `#FFFFFF` |
+| ![](./assets/swatches/CD0000.png) | base08 | red | `#CD0000` |
+| ![](./assets/swatches/CD5C00.png) | base09 | orange | `#CD5C00` |
+| ![](./assets/swatches/CDCD00.png) | base0A | yellow | `#CDCD00` |
+| ![](./assets/swatches/00CD00.png) | base0B | green | `#00CD00` |
+| ![](./assets/swatches/00CDCD.png) | base0C | cyan | `#00CDCD` |
+| ![](./assets/swatches/0000EE.png) | base0D | blue | `#0000EE` |
+| ![](./assets/swatches/CD00CD.png) | base0E | magenta | `#CD00CD` |
+| ![](./assets/swatches/800000.png) | base0F | maroon | `#800000` |
 
 ---
+
+## Repo layout
+
+```
+sturq-palette/
+├── formats/
+│   ├── palette.json   ← source of truth
+│   ├── palette.toml
+│   ├── variables.css
+│   └── base16.yaml
+├── assets/
+│   ├── preview.png
+│   └── swatches/<HEX>.png
+├── scripts/
+│   ├── build.sh        regenerates every format + asset
+│   └── gen-preview.sh  rebuilds assets/preview.png alone
+├── LICENSE
+└── README.md
+```
+
+Only `formats/palette.json` is hand-edited. Everything else is rebuilt by
+`scripts/build.sh` — run it after touching the JSON, commit the result.
 
 ## Used by
 
