@@ -19,7 +19,6 @@ The same palette in every format you'll realistically need:
 
 | File | Format | Use case |
 |---|---|---|
-| [`flake.nix`](./flake.nix) | Nix flake | NixOS / home-manager / Stylix |
 | [`formats/base16.yaml`](./formats/base16.yaml) | Base16 | tinted-theming, base16 generators |
 | [`formats/palette.json`](./formats/palette.json) | JSON | Web apps, JS bundlers, anything generic |
 | [`formats/palette.toml`](./formats/palette.toml) | TOML | Rust / config files / generic |
@@ -31,35 +30,32 @@ Pull a single file:
 curl -O https://raw.githubusercontent.com/sturq/sturq-palette/main/formats/base16.yaml
 ```
 
-### From Nix
+### Consume from Nix
 
-The repo is a flake. Add it as an input and read colours from it directly
-— no copy-paste, no drift between this repo and your config:
+This repo is pure data — no flake, no language lock-in. Add it as a
+`flake = false` input and parse the JSON yourself:
 
 ```nix
 {
-  inputs.sturq-palette.url = "github:sturq/sturq-palette";
+  inputs.sturq-palette = {
+    url = "github:sturq/sturq-palette";
+    flake = false;
+  };
 
-  outputs = { self, nixpkgs, sturq-palette, ... }: {
-    nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
-      modules = [{
-        stylix.base16Scheme = sturq-palette.base16Scheme;
-        # raw tokens if you need them:
-        # sturq-palette.palette.accents.blue   => "#0000EE"
-        # sturq-palette.palette.core.primary   => "#B9C5EE"
-      }];
-    };
+  outputs = { nixpkgs, sturq-palette, ... }: let
+    palette = builtins.fromJSON (builtins.readFile "${sturq-palette}/formats/palette.json");
+  in {
+    # palette.core.primary   => "#B9C5EE"
+    # palette.accents.blue   => "#0000EE"
   };
 }
 ```
 
-Outputs:
+### Consume from JS / Rust / anything
 
-| Attr | Type |
-|---|---|
-| `palette` | full token tree: `core`, `surfaces`, `text`, `accents` |
-| `base16Scheme` | Stylix-ready base16 attrs (bare hex, no `#`) |
-| `lib.stripHash` | drop leading `#` from a hex string |
+Same idea — fetch `formats/palette.json` and parse with your stdlib.
+The JSON is stable: `core`, `surfaces`, `text`, `accents` (with a
+nested `bright` group under accents).
 
 ---
 
