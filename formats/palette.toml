@@ -1,6 +1,6 @@
-name = "Sturq OLED"
+name = "Sturq Periwinkle"
 author = "sturq"
-slug = "sturq-oled"
+slug = "sturq-periwinkle"
 variant = "dark"
 
 [core]
@@ -9,19 +9,19 @@ primary = "#B9C5EE"
 
 [surfaces]
 crust = "#000000"
-mantle = "#000000"
-dim = "#1C1C1C"
+mantle = "#1F2333"
+dim = "#1F2333"
 surface0 = "#2A3042"
-surface1 = "#3A3A3A"
-surface2 = "#586384"
+surface1 = "#353B50"
+surface2 = "#404661"
 
 [text]
-text = "#E5E5E5"
-subtext1 = "#F5F5F5"
+text = "#D8DCE9"
+subtext1 = "#FFFFFF"
 subtext0 = "#FFFFFF"
-overlay2 = "#B2B2B2"
+overlay2 = "#9CA7CE"
 overlay1 = "#9CA7CE"
-overlay0 = "#7F7F7F"
+overlay0 = "#586384"
 
 [accents]
 red = "#CD0000"
@@ -29,14 +29,14 @@ orange = "#CD5C00"
 yellow = "#CDCD00"
 green = "#00CD00"
 cyan = "#00CDCD"
-blue = "#0000EE"
+blue = "#B9C5EE"
 magenta = "#CD00CD"
 maroon = "#800000"
 
 [accents.bright]
-red = "#FF0000"
+red = "#FF5555"
 yellow = "#FFFF00"
 green = "#00FF00"
 cyan = "#00FFFF"
-blue = "#5C5CFF"
+blue = "#C8D2F0"
 magenta = "#FF00FF"
