@@ -2,10 +2,7 @@
 
 # sturq-palette
 
-Dark color palette with **Termux-default ANSI accents**. Pure black
-surfaces, bright primary colours, designed so a terminal session and the
-UI around it use the same exact hexes — Linux console, xterm, Termux,
-they all start from `#cd0000` for red, `#0000ee` for blue, etc.
+Periwinkle on indigo. Dark base, white text, one accent, deep OLED step.
 
 ![Palette overview](./assets/preview.png)
 
@@ -50,54 +47,58 @@ from it, so they can never drift.
 |  | Token | Hex |
 |---|---|---|
 | ![](./assets/swatches/000000.png) | crust | `#000000` |
-| ![](./assets/swatches/000000.png) | mantle | `#000000` |
-| ![](./assets/swatches/1C1C1C.png) | dim | `#1C1C1C` |
+| ![](./assets/swatches/1F2333.png) | mantle | `#1F2333` |
+| ![](./assets/swatches/1F2333.png) | dim | `#1F2333` |
 | ![](./assets/swatches/2A3042.png) | surface0 | `#2A3042` |
-| ![](./assets/swatches/3A3A3A.png) | surface1 | `#3A3A3A` |
-| ![](./assets/swatches/586384.png) | surface2 | `#586384` |
+| ![](./assets/swatches/353B50.png) | surface1 | `#353B50` |
+| ![](./assets/swatches/404661.png) | surface2 | `#404661` |
 
 ### Text & overlays
 
 |  | Token | Hex |
 |---|---|---|
-| ![](./assets/swatches/E5E5E5.png) | text | `#E5E5E5` |
-| ![](./assets/swatches/F5F5F5.png) | subtext1 | `#F5F5F5` |
+| ![](./assets/swatches/D8DCE9.png) | text | `#D8DCE9` |
+| ![](./assets/swatches/FFFFFF.png) | subtext1 | `#FFFFFF` |
 | ![](./assets/swatches/FFFFFF.png) | subtext0 | `#FFFFFF` |
-| ![](./assets/swatches/B2B2B2.png) | overlay2 | `#B2B2B2` |
+| ![](./assets/swatches/9CA7CE.png) | overlay2 | `#9CA7CE` |
 | ![](./assets/swatches/9CA7CE.png) | overlay1 | `#9CA7CE` |
-| ![](./assets/swatches/7F7F7F.png) | overlay0 | `#7F7F7F` |
+| ![](./assets/swatches/586384.png) | overlay0 | `#586384` |
 
-### Accents — Termux default ANSI
+### Accents
 
 |  | Token | Hex |  | Bright variant | Hex |
 |---|---|---|---|---|---|
-| ![](./assets/swatches/CD0000.png) | red | `#CD0000` | ![](./assets/swatches/FF0000.png) | bright_red | `#FF0000` |
+| ![](./assets/swatches/CD0000.png) | red | `#CD0000` | ![](./assets/swatches/FF5555.png) | bright_red | `#FF5555` |
 | ![](./assets/swatches/CD5C00.png) | orange | `#CD5C00` |  | — | — |
 | ![](./assets/swatches/CDCD00.png) | yellow | `#CDCD00` | ![](./assets/swatches/FFFF00.png) | bright_yellow | `#FFFF00` |
 | ![](./assets/swatches/00CD00.png) | green | `#00CD00` | ![](./assets/swatches/00FF00.png) | bright_green | `#00FF00` |
 | ![](./assets/swatches/00CDCD.png) | cyan | `#00CDCD` | ![](./assets/swatches/00FFFF.png) | bright_cyan | `#00FFFF` |
-| ![](./assets/swatches/0000EE.png) | blue | `#0000EE` | ![](./assets/swatches/5C5CFF.png) | bright_blue | `#5C5CFF` |
+| ![](./assets/swatches/B9C5EE.png) | blue | `#B9C5EE` | ![](./assets/swatches/C8D2F0.png) | bright_blue | `#C8D2F0` |
 | ![](./assets/swatches/CD00CD.png) | magenta | `#CD00CD` | ![](./assets/swatches/FF00FF.png) | bright_magenta | `#FF00FF` |
 | ![](./assets/swatches/800000.png) | maroon | `#800000` |  | — | — |
+
+`blue` is the same hex as `primary` on purpose — so the base16 accent
+slot (`base0D`) lands on periwinkle everywhere it's consumed: terminal,
+KDE, web. One accent colour across the stack.
 
 ### Base16 mapping
 
 |  | Slot | Token | Hex |
 |---|---|---|---|
-| ![](./assets/swatches/000000.png) | base00 | mantle | `#000000` |
-| ![](./assets/swatches/1C1C1C.png) | base01 | dim | `#1C1C1C` |
+| ![](./assets/swatches/000000.png) | base00 | crust | `#000000` |
+| ![](./assets/swatches/1F2333.png) | base01 | dim | `#1F2333` |
 | ![](./assets/swatches/2A3042.png) | base02 | surface0 | `#2A3042` |
-| ![](./assets/swatches/7F7F7F.png) | base03 | surface1 | `#7F7F7F` |
-| ![](./assets/swatches/B2B2B2.png) | base04 | overlay2 | `#B2B2B2` |
-| ![](./assets/swatches/E5E5E5.png) | base05 | text | `#E5E5E5` |
-| ![](./assets/swatches/F5F5F5.png) | base06 | subtext1 | `#F5F5F5` |
+| ![](./assets/swatches/7F7F7F.png) | base03 | — (fixed grey) | `#7F7F7F` |
+| ![](./assets/swatches/9CA7CE.png) | base04 | overlay2 | `#9CA7CE` |
+| ![](./assets/swatches/D8DCE9.png) | base05 | text | `#D8DCE9` |
+| ![](./assets/swatches/FFFFFF.png) | base06 | subtext1 | `#FFFFFF` |
 | ![](./assets/swatches/FFFFFF.png) | base07 | subtext0 | `#FFFFFF` |
 | ![](./assets/swatches/CD0000.png) | base08 | red | `#CD0000` |
 | ![](./assets/swatches/CD5C00.png) | base09 | orange | `#CD5C00` |
 | ![](./assets/swatches/CDCD00.png) | base0A | yellow | `#CDCD00` |
 | ![](./assets/swatches/00CD00.png) | base0B | green | `#00CD00` |
 | ![](./assets/swatches/00CDCD.png) | base0C | cyan | `#00CDCD` |
-| ![](./assets/swatches/0000EE.png) | base0D | blue | `#0000EE` |
+| ![](./assets/swatches/B9C5EE.png) | base0D | primary | `#B9C5EE` |
 | ![](./assets/swatches/CD00CD.png) | base0E | magenta | `#CD00CD` |
 | ![](./assets/swatches/800000.png) | base0F | maroon | `#800000` |
 
@@ -125,13 +126,8 @@ sturq-palette/
 Only `formats/palette.json` is hand-edited. Everything else is rebuilt by
 `scripts/build.sh` — run it after touching the JSON, commit the result.
 
-## Used by
-
-- [`sturq/nix-config`](https://github.com/sturq/nix-config) — NixOS via Stylix
-- [`sturq/win-glazewm`](https://github.com/sturq/win-glazewm) — Windows via Zebar CSS variables + Windows accent color
-
 ---
 
 ## License
 
-CC0 1.0 — public domain. Use, remix, sell, ignore attribution.
+CC0 1.0 — public domain.
