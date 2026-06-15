@@ -145,4 +145,4 @@ sturq-palette/
 
 ## License
 
-CC0 1.0 — public domain.
+CC BY-SA 4.0 — share-alike. Derivatives must carry the same license.
