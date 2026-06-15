@@ -6,39 +6,5 @@
   "core": {
     "base":    "#2A3042",
     "primary": "#B9C5EE"
-  },
-  "surfaces": {
-    "crust":    "#000000",
-    "mantle":   "#1F2333",
-    "dim":      "#1F2333",
-    "surface0": "#2A3042",
-    "surface1": "#353B50",
-    "surface2": "#404661"
-  },
-  "text": {
-    "text":     "#D8DCE9",
-    "subtext1": "#FFFFFF",
-    "subtext0": "#FFFFFF",
-    "overlay2": "#9CA7CE",
-    "overlay1": "#9CA7CE",
-    "overlay0": "#586384"
-  },
-  "accents": {
-    "red":     "#CD0000",
-    "orange":  "#CD5C00",
-    "yellow":  "#CDCD00",
-    "green":   "#00CD00",
-    "cyan":    "#00CDCD",
-    "blue":    "#B9C5EE",
-    "magenta": "#CD00CD",
-    "maroon":  "#800000",
-    "bright": {
-      "red":     "#FF5555",
-      "yellow":  "#FFFF00",
-      "green":   "#00FF00",
-      "cyan":    "#00FFFF",
-      "blue":    "#C8D2F0",
-      "magenta": "#FF00FF"
-    }
   }
 }
