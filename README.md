@@ -45,11 +45,11 @@ and is replayed by [`scripts/build.py`](./scripts/build.py).
 
 |  | Token | Hex |
 |---|---|---|
-| ![](./assets/swatches/F4F4F5.png) | text | `#F4F4F5` |
-| ![](./assets/swatches/DFDFE2.png) | subtext1 | `#DFDFE2` |
-| ![](./assets/swatches/C9CBCF.png) | subtext0 | `#C9CBCF` |
-| ![](./assets/swatches/9FA1A9.png) | overlay2 | `#9FA1A9` |
-| ![](./assets/swatches/7F828D.png) | overlay1 | `#7F828D` |
+| ![](./assets/swatches/FFFFFF.png) | text | `#FFFFFF` |
+| ![](./assets/swatches/E9EAEC.png) | subtext1 | `#E9EAEC` |
+| ![](./assets/swatches/D4D5D9.png) | subtext0 | `#D4D5D9` |
+| ![](./assets/swatches/A9ACB3.png) | overlay2 | `#A9ACB3` |
+| ![](./assets/swatches/898D97.png) | overlay1 | `#898D97` |
 | ![](./assets/swatches/5F6371.png) | overlay0 | `#5F6371` |
 
 ### Accents
@@ -73,10 +73,10 @@ and is replayed by [`scripts/build.py`](./scripts/build.py).
 | ![](./assets/swatches/343A4B.png) | base01 | `#343A4B` |
 | ![](./assets/swatches/3F4454.png) | base02 | `#3F4454` |
 | ![](./assets/swatches/505564.png) | base03 | `#505564` |
-| ![](./assets/swatches/9FA1A9.png) | base04 | `#9FA1A9` |
-| ![](./assets/swatches/F4F4F5.png) | base05 | `#F4F4F5` |
-| ![](./assets/swatches/DFDFE2.png) | base06 | `#DFDFE2` |
-| ![](./assets/swatches/C9CBCF.png) | base07 | `#C9CBCF` |
+| ![](./assets/swatches/A9ACB3.png) | base04 | `#A9ACB3` |
+| ![](./assets/swatches/FFFFFF.png) | base05 | `#FFFFFF` |
+| ![](./assets/swatches/E9EAEC.png) | base06 | `#E9EAEC` |
+| ![](./assets/swatches/D4D5D9.png) | base07 | `#D4D5D9` |
 | ![](./assets/swatches/8189A6.png) | base08 | `#8189A6` |
 | ![](./assets/swatches/9DA7CA.png) | base09 | `#9DA7CA` |
 | ![](./assets/swatches/BCC7EE.png) | base0A | `#BCC7EE` |

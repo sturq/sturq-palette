@@ -11,12 +11,12 @@
   --sturq-surface1: #3F4454;
   --sturq-surface2: #505564;
   /* Text & overlays */
-  --sturq-text: #F4F4F5;
-  --sturq-subtext1: #DFDFE2;
-  --sturq-subtext0: #C9CBCF;
-  --sturq-overlay2: #9FA1A9;
-  --sturq-overlay1: #7F828D;
-  --sturq-overlay0: #5F6371;
+  --sturq-text: #FFFFFF;
+  --sturq-subtext1: #E9EAEC;
+  --sturq-subtext0: #D4D5D9;
+  --sturq-overlay2: #A9ACB3;
+  --sturq-overlay1: #898D97;
+  --sturq-overlay0: #696E7A;
   /* Accents */
   --sturq-red: #8189A6;
   --sturq-orange: #9DA7CA;

@@ -17,12 +17,12 @@ surface1 = "#3F4454"
 surface2 = "#505564"
 
 [text]
-text = "#F4F4F5"
-subtext1 = "#DFDFE2"
-subtext0 = "#C9CBCF"
-overlay2 = "#9FA1A9"
-overlay1 = "#7F828D"
-overlay0 = "#5F6371"
+text = "#FFFFFF"
+subtext1 = "#E9EAEC"
+subtext0 = "#D4D5D9"
+overlay2 = "#A9ACB3"
+overlay1 = "#898D97"
+overlay0 = "#696E7A"
 
 [accents]
 red = "#8189A6"

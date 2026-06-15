@@ -51,12 +51,12 @@ surfaces = {
     "surface2": lighten(BASE, 18),
 }
 text = {
-    "text":     mix("#FFFFFF", BASE, 5),
-    "subtext1": mix("#FFFFFF", BASE, 15),
-    "subtext0": mix("#FFFFFF", BASE, 25),
-    "overlay2": mix("#FFFFFF", BASE, 45),
-    "overlay1": mix("#FFFFFF", BASE, 60),
-    "overlay0": mix("#FFFFFF", BASE, 75),
+    "text":     "#FFFFFF",
+    "subtext1": mix("#FFFFFF", BASE, 10),
+    "subtext0": mix("#FFFFFF", BASE, 20),
+    "overlay2": mix("#FFFFFF", BASE, 40),
+    "overlay1": mix("#FFFFFF", BASE, 55),
+    "overlay0": mix("#FFFFFF", BASE, 70),
 }
 accents = {
     "red":     darken(PRIMARY, 30),
