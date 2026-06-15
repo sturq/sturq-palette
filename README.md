@@ -50,7 +50,7 @@ and is replayed by [`scripts/build.py`](./scripts/build.py).
 | ![](./assets/swatches/D4D5D9.png) | subtext0 | `#D4D5D9` |
 | ![](./assets/swatches/A9ACB3.png) | overlay2 | `#A9ACB3` |
 | ![](./assets/swatches/898D97.png) | overlay1 | `#898D97` |
-| ![](./assets/swatches/5F6371.png) | overlay0 | `#5F6371` |
+| ![](./assets/swatches/696E7A.png) | overlay0 | `#696E7A` |
 
 ### Accents
 
