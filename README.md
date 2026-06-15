@@ -10,6 +10,21 @@ Periwinkle on indigo. Dark base, white text, one accent, deep OLED step.
 
 ---
 
+## Derived from two colours
+
+Only `core.base` and `core.primary` are sources of truth. Every other
+token (surfaces, text tiers, accents incl. bright variants, base16
+scheme, ANSI palette) is computed via `mix` / `lighten` / `darken`.
+Swap base or primary and the whole theme moves with it.
+
+![Derivation map](./assets/derivation.png)
+
+The math lives in [`sturq/nix-config:lib/palette.nix`](https://github.com/sturq/nix-config/blob/main/lib/palette.nix)
+and is replayed by [`scripts/render-derivation.py`](./scripts/render-derivation.py)
+to keep this image in sync.
+
+---
+
 ## Use it
 
 The palette ships in every format that matters:
