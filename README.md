@@ -56,14 +56,14 @@ and is replayed by [`scripts/build.py`](./scripts/build.py).
 
 |  | Token | Hex |  | Bright | Hex |
 |---|---|---|---|---|---|
-| ![](./assets/swatches/8189A6.png) | red | `#8189A6` | ![](./assets/swatches/C0CAEF.png) | bright_red | `#C0CAEF` |
-| ![](./assets/swatches/9DA7CA.png) | orange | `#9DA7CA` | ![](./assets/swatches/BCC7EE.png) | bright_orange | `#BCC7EE` |
-| ![](./assets/swatches/BCC7EE.png) | yellow | `#BCC7EE` | ![](./assets/swatches/C3CDF0.png) | bright_yellow | `#C3CDF0` |
-| ![](./assets/swatches/B9C5EE.png) | green | `#B9C5EE` | ![](./assets/swatches/C0CAEF.png) | bright_green | `#C0CAEF` |
-| ![](./assets/swatches/CAD3F2.png) | cyan | `#CAD3F2` | ![](./assets/swatches/D1D9F3.png) | bright_cyan | `#D1D9F3` |
-| ![](./assets/swatches/B9C5EE.png) | blue | `#B9C5EE` | ![](./assets/swatches/C3CDF0.png) | bright_blue | `#C3CDF0` |
-| ![](./assets/swatches/6F768E.png) | magenta | `#6F768E` | ![](./assets/swatches/8A93B2.png) | bright_magenta | `#8A93B2` |
-| ![](./assets/swatches/5C6277.png) | maroon | `#5C6277` | ![](./assets/swatches/78809A.png) | bright_maroon | `#78809A` |
+| ![](./assets/swatches/5C647E.png) | red | `#5C647E` | ![](./assets/swatches/7881A0.png) | bright_red | `#7881A0` |
+| ![](./assets/swatches/717A98.png) | orange | `#717A98` | ![](./assets/swatches/8690B1.png) | bright_orange | `#8690B1` |
+| ![](./assets/swatches/8E98BA.png) | yellow | `#8E98BA` | ![](./assets/swatches/A0ABCD.png) | bright_yellow | `#A0ABCD` |
+| ![](./assets/swatches/9CA7CB.png) | green | `#9CA7CB` | ![](./assets/swatches/A7B2D6.png) | bright_green | `#A7B2D6` |
+| ![](./assets/swatches/9FA8C9.png) | cyan | `#9FA8C9` | ![](./assets/swatches/AAB4D2.png) | bright_cyan | `#AAB4D2` |
+| ![](./assets/swatches/B9C5EE.png) | blue | `#B9C5EE` | ![](./assets/swatches/C0CAEF.png) | bright_blue | `#C0CAEF` |
+| ![](./assets/swatches/6A738F.png) | magenta | `#6A738F` | ![](./assets/swatches/7F89A9.png) | bright_magenta | `#7F89A9` |
+| ![](./assets/swatches/4D556D.png) | maroon | `#4D556D` | ![](./assets/swatches/636B86.png) | bright_maroon | `#636B86` |
 
 ### Base16 mapping
 
@@ -77,14 +77,14 @@ and is replayed by [`scripts/build.py`](./scripts/build.py).
 | ![](./assets/swatches/FFFFFF.png) | base05 | `#FFFFFF` |
 | ![](./assets/swatches/E9EAEC.png) | base06 | `#E9EAEC` |
 | ![](./assets/swatches/D4D5D9.png) | base07 | `#D4D5D9` |
-| ![](./assets/swatches/8189A6.png) | base08 | `#8189A6` |
-| ![](./assets/swatches/9DA7CA.png) | base09 | `#9DA7CA` |
-| ![](./assets/swatches/BCC7EE.png) | base0A | `#BCC7EE` |
-| ![](./assets/swatches/B9C5EE.png) | base0B | `#B9C5EE` |
-| ![](./assets/swatches/CAD3F2.png) | base0C | `#CAD3F2` |
+| ![](./assets/swatches/5C647E.png) | base08 | `#5C647E` |
+| ![](./assets/swatches/717A98.png) | base09 | `#717A98` |
+| ![](./assets/swatches/8E98BA.png) | base0A | `#8E98BA` |
+| ![](./assets/swatches/9CA7CB.png) | base0B | `#9CA7CB` |
+| ![](./assets/swatches/9FA8C9.png) | base0C | `#9FA8C9` |
 | ![](./assets/swatches/B9C5EE.png) | base0D | `#B9C5EE` |
-| ![](./assets/swatches/6F768E.png) | base0E | `#6F768E` |
-| ![](./assets/swatches/5C6277.png) | base0F | `#5C6277` |
+| ![](./assets/swatches/6A738F.png) | base0E | `#6A738F` |
+| ![](./assets/swatches/4D556D.png) | base0F | `#4D556D` |
 
 `base00` is `core.base` raw, `base0D` is `core.primary` raw. The whole
 scheme orbits these two.

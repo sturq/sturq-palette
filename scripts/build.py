@@ -59,24 +59,24 @@ text = {
     "overlay0": mix("#FFFFFF", BASE, 70),
 }
 accents = {
-    "red":     darken(PRIMARY, 30),
-    "orange":  darken(PRIMARY, 15),
-    "yellow":  lighten(PRIMARY, 5),
-    "green":   PRIMARY,
-    "cyan":    lighten(PRIMARY, 25),
+    "red":     mix(BASE, PRIMARY, 35),
+    "orange":  mix(BASE, PRIMARY, 50),
+    "yellow":  mix(BASE, PRIMARY, 70),
+    "green":   mix(BASE, PRIMARY, 80),
+    "cyan":    lighten(mix(BASE, PRIMARY, 75), 10),
     "blue":    PRIMARY,
-    "magenta": darken(PRIMARY, 40),
-    "maroon":  darken(PRIMARY, 50),
+    "magenta": mix(BASE, PRIMARY, 45),
+    "maroon":  mix(BASE, PRIMARY, 25),
 }
 bright = {
-    "red":     mix(PRIMARY, "#FFFFFF", 10),
-    "orange":  lighten(PRIMARY, 5),
-    "yellow":  lighten(PRIMARY, 15),
-    "green":   lighten(PRIMARY, 10),
-    "cyan":    lighten(PRIMARY, 35),
-    "blue":    lighten(PRIMARY, 15),
-    "magenta": darken(PRIMARY, 25),
-    "maroon":  darken(PRIMARY, 35),
+    "red":     mix(BASE, PRIMARY, 55),
+    "orange":  mix(BASE, PRIMARY, 65),
+    "yellow":  lighten(mix(BASE, PRIMARY, 80), 5),
+    "green":   lighten(mix(BASE, PRIMARY, 85), 5),
+    "cyan":    lighten(mix(BASE, PRIMARY, 80), 15),
+    "blue":    lighten(PRIMARY, 10),
+    "magenta": mix(BASE, PRIMARY, 60),
+    "maroon":  mix(BASE, PRIMARY, 40),
 }
 # base16 has base + primary baked in directly (sturq/nix-config:lib/palette.nix)
 base16 = {
